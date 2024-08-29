@@ -6,35 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #top, .menustyle, #sidebar, #bottom{
+        body {
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+
+        .setting {
+            position: relative;
+            overflow: auto;
+        }
+
+        #top,
+        .menustyle,
+        #sidebar,
+        #bottom {
             margin: 4px;
             border-radius: 4px;
         }
+
         #top {
             background-color: #04aa6d;
             color: white;
             padding: 10px;
+            position: relative;
         }
 
         #menu {
             width: 200px;
             float: left;
+            position: relative;
         }
 
         #main {
             padding: 10px;
             margin: 0 210px;
+            position: relative;
         }
 
         #sidebar {
+            position: absolute;
             background-color: #32a4e7;
             color: #ffffff;
             width: 180px;
             padding: 10px;
-            top: 90px;
-            bottom: 0;
-            right: 0;
-            position: absolute;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
         }
 
         #bottom {
@@ -45,7 +63,7 @@
             font-size: 70%;
             line-height: 14px;
         }
-        
+
         .nospace {
             margin: 0;
         }
@@ -70,7 +88,6 @@
         .linkstyle:hover {
             text-decoration: none;
         }
-
     </style>
 </head>
 
@@ -79,44 +96,48 @@
         <h1 class="nospace">Welcome to 22100304 Homepage!</h1>
         <p class="nospace">Use the menu to select different</p>
     </div>
-    <div id="menu">
-        <ul style="margin: 0; padding: 0;">
-            <li class="menustyle">Stylesheet 1</li>
-            <li class="menustyle">Stylesheet 2</li>
-            <li class="menustyle">Stylesheet 3</li>
-            <li class="menustyle">Stylesheet 4</li>
-            <li class="menustyle">No Styelsheet</li>
-        </ul>
+    <div class="setting">
+        <div id="menu">
+            <ul style="margin: 0; padding: 0;">
+                <li class="menustyle">Stylesheet 1</li>
+                <li class="menustyle">Stylesheet 2</li>
+                <li class="menustyle">Stylesheet 3</li>
+                <li class="menustyle">Stylesheet 4</li>
+                <li class="menustyle">No Styelsheet</li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <h1>Same Page Different Stylesheets</h1>
+
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
+                change
+                the
+                layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
+                links:
+            </p>
+
+            <a class="linkstyle" href="">Stylesheet 1</a>,&nbsp;
+            <a class="linkstyle" href="">Stylesheet 2</a>,&nbsp;
+            <a class="linkstyle" href="">Stylesheet 3</a>,&nbsp;
+            <a class="linkstyle" href="">Stylesheet 4</a>.
+
+            <h2>No Styles</h2>
+            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+                looks
+                like with no stylesheet:</p>
+            <a class="linkstyle" href="">No Stylesheet</a>.
+        </div>
+
+        <div id="sidebar">
+            <h3>Side-Bar</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet
+                dolore magna aliquam erat volutpat.</p>
+        </div>
+
     </div>
-
-    <div id="main">
-        <h1>Same Page Different Stylesheets</h1>
-
-        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
-            the
-            layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
-            links:
-        </p>
-
-        <a class="linkstyle" href="">Stylesheet 1</a>,&nbsp;
-        <a class="linkstyle" href="">Stylesheet 2</a>,&nbsp;
-        <a class="linkstyle" href="">Stylesheet 3</a>,&nbsp;
-        <a class="linkstyle" href="">Stylesheet 4</a>.
-
-        <h2>No Styles</h2>
-        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
-            looks
-            like with no stylesheet:</p>
-        <a class="linkstyle" href="">No Stylesheet</a>.
-    </div>
-
-    <div id="sidebar">
-        <h3>Side-Bar</h3>
-
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-            dolore magna aliquam erat volutpat.</p>
-    </div>
-
     <div id="bottom">
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
             dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
