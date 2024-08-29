@@ -9,6 +9,7 @@
         #top{
             background-color: #04aa6d;
             color : white;
+            padding: 10px;
         }
 
         .white {
@@ -16,9 +17,34 @@
         }
 
         .nospace {
-            border: 100;
-            margin-top: 0;
-            
+            margin: 0;
+        }
+
+        .menustyle{
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            padding : 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            list-style-type: none;
+            margin: 4px;
+        }
+
+        .menusytle:hover {
+            background-color: #ffffff;
+        }
+        
+        .clickedstyle{
+            background-color: #ffffff;
+            border: 1px solid #d4d4d4;
+            padding : 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin : 4px;
+        }
+        #menu{
+            width: 200px;
+            float : left;
         }
     </style>
 </head>
@@ -30,11 +56,11 @@
     </div>
     <div id="menu">
         <ul>
-            <li>Stylesheet 1</li>
-            <li>Stylesheet 2</li>
-            <li>Stylesheet 3</li>
-            <li>Stylesheet 4</li>
-            <li>No Styelsheet</li>
+            <li class="menustyle" >Stylesheet 1</li>
+            <li class="menustyle" >Stylesheet 2</li>
+            <li class="menustyle" >Stylesheet 3</li>
+            <li class="menustyle" >Stylesheet 4</li>
+            <li class="menustyle" >No Styelsheet</li>
         </ul>
     </div>
         
