@@ -68,7 +68,8 @@
             margin: 0;
         }
 
-        .menustyle {
+        .menustyle,
+        .selectedmenu {
             background-color: #f1f1f1;
             border: 1px solid #d4d4d4;
             padding: 2px;
@@ -78,6 +79,14 @@
 
         .menustyle:hover {
             background-color: #ffffff;
+        }
+
+        .selectedmenu {
+            background-color: #04aa6d;
+            color: #ffffff;
+            margin: 4px;
+            border-radius: 4px;
+            font-weight: bold;
         }
 
         .linkstyle {
@@ -99,7 +108,7 @@
     <div class="setting">
         <div id="menu">
             <ul style="margin: 0; padding: 0;">
-                <li class="menustyle">Stylesheet 1</li>
+                <li class="selectedmenu">Stylesheet 1</li>
                 <li class="menustyle">Stylesheet 2</li>
                 <li class="menustyle">Stylesheet 3</li>
                 <li class="menustyle">Stylesheet 4</li>
@@ -110,7 +119,7 @@
         <div id="main">
             <h1>Same Page Different Stylesheets</h1>
 
-            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
+            <p style="margin: 0;">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
                 change
                 the
                 layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
@@ -123,7 +132,7 @@
             <a class="linkstyle" href="">Stylesheet 4</a>.
 
             <h2>No Styles</h2>
-            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+            <p style="margin: 0;">This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
                 looks
                 like with no stylesheet:</p>
             <a class="linkstyle" href="">No Stylesheet</a>.
