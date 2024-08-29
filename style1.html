@@ -103,16 +103,16 @@
 <body>
     <div id="top">
         <h1 class="nospace">Welcome to 22100304 Homepage!</h1>
-        <p class="nospace">Use the menu to select different</p>
+        <p class="nospace">Use the menu to select different Stylesheets</p>
     </div>
     <div class="setting">
         <div id="menu">
             <ul style="margin: 0; padding: 0;">
                 <li class="selectedmenu">Stylesheet 1</li>
-                <li class="menustyle">Stylesheet 2</li>
+                <li class="menustyle" onclick="location.href='style2.html'">Stylesheet 2</li>
                 <li class="menustyle">Stylesheet 3</li>
                 <li class="menustyle">Stylesheet 4</li>
-                <li class="menustyle">No Styelsheet</li>
+                <li class="menustyle" onclick="location.href='nostyle.html'">No Styelsheet</li>
             </ul>
         </div>
 
@@ -126,16 +126,16 @@
                 links:
             </p>
 
-            <a class="linkstyle" href="">Stylesheet1</a>,
-            <a class="linkstyle" href="">Stylesheet2</a>,
+            <a class="linkstyle" href="style1.html">Stylesheet1</a>,
+            <a class="linkstyle" href="style2.html">Stylesheet2</a>,
             <a class="linkstyle" href="">Stylesheet3</a>,
-            <a class="linkstyle" href="">Stylesheet4</a>.
+            <a class="linkstyle" href="nostyle.html">Stylesheet4</a>.
 
             <h2>No Styles</h2>
             <p style="margin: 0;">This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
                 looks
                 like with no stylesheet:</p>
-            <a class="linkstyle" href="">No Stylesheet</a>.
+            <a class="linkstyle" href="nostyle.html">No Stylesheet</a>.
         </div>
 
         <div id="sidebar">
