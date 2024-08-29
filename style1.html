@@ -6,46 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #top{
+        #top, .menustyle, #sidebar, #bottom{
+            margin: 4px;
+            border-radius: 4px;
+        }
+        #top {
             background-color: #04aa6d;
-            color : white;
+            color: white;
             padding: 10px;
         }
 
-        .white {
-            color: white;
+        #menu {
+            width: 200px;
+            float: left;
         }
 
+        #main {
+            padding: 10px;
+            margin: 0 210px;
+        }
+
+        #sidebar {
+            background-color: #32a4e7;
+            color: #ffffff;
+            width: 180px;
+            padding: 10px;
+            top: 90px;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+        }
+
+        #bottom {
+            border: 1px solid #d4d4d4;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+        }
+        
         .nospace {
             margin: 0;
         }
 
-        .menustyle{
+        .menustyle {
             background-color: #f1f1f1;
             border: 1px solid #d4d4d4;
-            padding : 2px;
+            padding: 2px;
             cursor: pointer;
-            border-radius: 4px;
             list-style-type: none;
-            margin: 4px;
         }
 
-        .menusytle:hover {
+        .menustyle:hover {
             background-color: #ffffff;
         }
-        
-        .clickedstyle{
-            background-color: #ffffff;
-            border: 1px solid #d4d4d4;
-            padding : 2px;
-            cursor: pointer;
-            border-radius: 4px;
-            margin : 4px;
+
+        .linkstyle {
+            color: #000000;
+            text-decoration: underline;
         }
-        #menu{
-            width: 200px;
-            float : left;
+
+        .linkstyle:hover {
+            text-decoration: none;
         }
+
     </style>
 </head>
 
@@ -55,49 +80,54 @@
         <p class="nospace">Use the menu to select different</p>
     </div>
     <div id="menu">
-        <ul>
-            <li class="menustyle" >Stylesheet 1</li>
-            <li class="menustyle" >Stylesheet 2</li>
-            <li class="menustyle" >Stylesheet 3</li>
-            <li class="menustyle" >Stylesheet 4</li>
-            <li class="menustyle" >No Styelsheet</li>
+        <ul style="margin: 0; padding: 0;">
+            <li class="menustyle">Stylesheet 1</li>
+            <li class="menustyle">Stylesheet 2</li>
+            <li class="menustyle">Stylesheet 3</li>
+            <li class="menustyle">Stylesheet 4</li>
+            <li class="menustyle">No Styelsheet</li>
         </ul>
     </div>
-        
+
     <div id="main">
         <h1>Same Page Different Stylesheets</h1>
-        
-        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the
-            layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
+            the
+            layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
+            links:
         </p>
-        
-        <a href="">Stylesheet 1</a>,&nbsp;
-        <a href="">Stylesheet 2</a>,&nbsp;
-        <a href="">Stylesheet 3</a>,&nbsp;
-        <a href="">Stylesheet 4</a>.
-        
+
+        <a class="linkstyle" href="">Stylesheet 1</a>,&nbsp;
+        <a class="linkstyle" href="">Stylesheet 2</a>,&nbsp;
+        <a class="linkstyle" href="">Stylesheet 3</a>,&nbsp;
+        <a class="linkstyle" href="">Stylesheet 4</a>.
+
         <h2>No Styles</h2>
-        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks
+        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+            looks
             like with no stylesheet:</p>
-            <a href="">No Stylesheet</a>.
+        <a class="linkstyle" href="">No Stylesheet</a>.
     </div>
-    
-    <div id=""sidebar>
+
+    <div id="sidebar">
         <h3>Side-Bar</h3>
-        
+
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
             dolore magna aliquam erat volutpat.</p>
-        </div>
-    
-        <div id="bottom">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+    </div>
+
+    <div id="bottom">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
             dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
             suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-            iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et
+            iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+            facilisi.
         </p>
-            
-        </div>
+
+    </div>
 
 </body>
 
