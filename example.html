@@ -31,6 +31,18 @@
             height: 33%;
         }
 
+        #navright {
+            float: right;
+            justify-content: center;
+            display: flex;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            line-height: 24px;
+            text-shadow: rgba(0, 0, 0, 0.5) 0px 0.8px 1.6px;
+            
+        }
+
         .container {
             max-width: 42em;
             padding: 1rem;
@@ -47,6 +59,13 @@
         .whitefont {
             color: #ffffff;
         }
+        
+        .grayfont {
+            color:rgba(33, 37, 41, 0.75);
+            margin: 16px;
+            padding: 4px;
+            border-bottom: 4px;
+        }
     </style>
 </head>
 
@@ -56,11 +75,11 @@
             <div style="float:left">
                 <h3 class="whitefont">Cover</h3>
             </div>
-            <div style="float: right;">
+            <div id="navright">
                 <nav>
                     <a href="#" class="whitefont">Home</a>
-                    <a href="#">Features</a>
-                    <a href="#">Contact</a>
+                    <a href="#" class="grayfont">Features</a>
+                    <a href="#" class="grayfont">Contact</a>
                 </nav>
 
             </div>
