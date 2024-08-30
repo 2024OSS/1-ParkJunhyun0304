@@ -10,6 +10,11 @@
             text-align: center;
             text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
             background-color: #212529;
+            max-width: 42em;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
         }
 
         #header {
@@ -19,46 +24,65 @@
         #main {
             color: #ffffff;
             height: 33%;
+            margin-bottom: 25%;
         }
 
         #footer {
             height: 33%;
         }
 
+        .container {
+            max-width: 42em;
+            padding: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            unicode-bidi: isolate;
+        }
+
         .whitefont {
             color: #ffffff;
         }
-
     </style>
 </head>
 
 <body>
-    <div id="header">
-        <h3 class="whitefont">Cover</h3>
-        <nav>
-            <a href="#" class="whitefont">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Contact</a>
-        </nav>
+    <div class="container">
+        <div id="header">
+            <div>
+                <h3 class="whitefont">Cover</h3>
+            </div>
+            <div>
+                <nav>
+                    <a href="#" class="whitefont">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Contact</a>
+                </nav>
+
+            </div>
+        </div>
+
+        <div id="main">
+            <h1>Cover your page.</h1>
+            <p>Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and
+                add
+                your own fullscreen background photo to make it your own.</p>
+            <p>Learn more</p>
+        </div>
+
+
+        <div id="footer">
+            <p>Cover template for
+                <a>Bootstrap</a>
+                , by
+                <a>@mdo</a>.
+            </p>
+        </div>
     </div>
-
-    <div id="main">
-        <h1>Cover your page.</h1>
-        <p>Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and
-            add
-            your own fullscreen background photo to make it your own.</p>
-        <p>Learn more</p>
-    </div>
-
-
-    <div id="footer">
-        <p>Cover template for
-            <a>Bootstrap</a>
-            , by
-            <a>@mdo</a>.
-        </p>
-    </div>
-
 </body>
 
 </html>
