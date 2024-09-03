@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+            background-color: #212529;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            line-height: 1.5;
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 42em;
+            padding: 1rem;
+            margin-right: auto !important;
+            margin-left: auto !important;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            unicode-bidi: isolate;
+            align-items: center;
+        }
+
+
+        #header {
+            position: relative;
+            width: 100%;
+            height: 36.8vh;
+        }
+
+        #main {
+            flex: 1;
+            color: #ffffff;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            font-size: 1rem;
+        }
+
+        #footer {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        #navright {
+            float: right;
+        }
+
+        .whitefont {
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .navwhitefont {
+            color: #ffffff;
+            margin: 0;
+            width: 700;
+            padding: 4px 0;
+            border-bottom-width: 4px;
+            line-height: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom-color: rgba(255, 255, 255);
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+            padding-top: .25rem !important;
+            padding-bottom: .25rem !important;
+            padding-right: 0;
+            padding-left: 0;
+
+        }
+
+        .navgrayfont {
+            color: rgba(255, 255, 255, 0.5);
+            border-bottom: 4px;
+            border-right-color: rgba(255, 255, 255, 0.5);
+            border-right-style: none;
+            border-right-width: 0px;
+            border-left-color: rgba(255, 255, 255, 0.5);
+            border-left-style: none;
+            border-left-width: 0px;
+            border-top-color: rgba(255, 255, 255, 0.5);
+            border-top-style: none;
+            border-top-width: 0px;
+            border-bottom: .25rem solid transparent;
+
+            font-weight: 700;
+            line-height: 24px;
+            list-style: none;
+            margin-left: 16px;
+            padding-top: .25rem !important;
+            padding-bottom: .25rem !important;
+            padding-right: 0;
+            padding-left: 0;
+            text-decoration: none;
+        }
+
+        .navgrayfont:hover,
+        .navwhitefont:hover {
+            border-bottom-color: rgba(255, 255, 255, 0.5);
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+        }
+
+        .coverfont {
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: .5rem;
+            font-weight: 500;
+            line-height: 1.2;
+            color: var(--bs-heading-color);
+        }
+
+        .mainsource {
+            margin-left: 20px;
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            display: block;
+            unicode-bidi: isolate;
+            max-width: 600px;
+        }
+
+        .learnmore {
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            border-style: solid;
+            border-width: 1px;
+            box-sizing: border-box;
+            color: rgb(51, 51, 51);
+            cursor: pointer;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            padding: 8px 16px;
+            text-shadow: none;
+            margin: 0;
+        }
+
+        .bottomstyle {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 16px;
+            font-weight: 400px;
+            display: flex;
+            margin-top: auto;
+            margin-bottom: 0;
+        }
+
+        .navleft {
+            color: #ffffff;
+            margin: 0;
+            font-size: 1.75rem;
+            font-weight: 500;
+            line-height: 1.2;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <div style="position: relative; float: left;">
+                <h3 class="navleft">Cover</h3>
+            </div>
+            <div id="navright">
+                <nav>
+                    <a href="#" class="navwhitefont">Home</a>
+                    <a href="#" class="navgrayfont">Features</a>
+                    <a href="#" class="navgrayfont">Contact</a>
+                </nav>
+
+            </div>
+        </div>
+
+        <div id="main">
+            <h1 class="coverfont">Cover your page.</h1>
+            <p class="mainsource">Cover is a one-page template for building simple and beautiful home pages. Download,
+                edit the text, and
+                add
+                your own fullscreen background photo to make it your own.</p>
+            <p class="learnmore">Learn more</p>
+        </div>
+
+
+        <div id="footer">
+            <p class="bottomstyle">Cover template for&nbsp;
+                <a href="https://getbootstrap.com/" class="whitefont">Bootstrap</a>
+                , by&nbsp;
+                <a href="https://twitter.com/mdo" class="whitefont">@mdo</a>.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

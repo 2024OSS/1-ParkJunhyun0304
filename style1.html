@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+
+        .setting {
+            position: relative;
+            overflow: auto;
+        }
+
+        #top,
+        .menustyle,
+        #sidebar,
+        #bottom {
+            margin: 4px;
+            border-radius: 4px;
+        }
+
+        #top {
+            background-color: #04aa6d;
+            color: white;
+            padding: 15px;
+        }
+
+        #menu {
+            width: 200px;
+            float: left;
+        }
+
+        #main {
+            padding: 10px;
+            margin: 0 210px;
+            padding-bottom: 25px;
+        }
+
+        #sidebar {
+            position: absolute;
+            background-color: #32a4e7;
+            color: #ffffff;
+            width: 180px;
+            padding: 10px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+        }
+
+        #bottom {
+            border: 1px solid #d4d4d4;
+            background-color: #f1f1f1;
+            text-align: center;
+            font-size: 70%;
+            line-height: 14px;
+        }
+
+        .nospace {
+            margin: 0;
+        }
+
+        .menustyle,
+        .selectedmenu {
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            padding: 2px;
+            cursor: pointer;
+            list-style-type: none;
+        }
+
+        .menustyle:hover {
+            background-color: #ffffff;
+        }
+
+        .selectedmenu {
+            background-color: #04aa6d;
+            color: #ffffff;
+            margin: 4px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .linkstyle {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .linkstyle:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setting">
+        <div id="top">
+            <h1 class="nospace">Welcome to 22100304 Homepage</h1>
+            <p class="nospace">Use the menu to select different Stylesheets</p>
+        </div>
+        <div class="setting">
+            <div id="menu">
+                <ul style="margin: 0; padding: 0;">
+                    <li class="selectedmenu">Stylesheet 1</li>
+                    <li class="menustyle" onclick="location.href='style2.html'">Stylesheet 2</li>
+                    <li class="menustyle">Stylesheet 3</li>
+                    <li class="menustyle">Stylesheet 4</li>
+                    <li class="menustyle" onclick="location.href='nostyle.html'">No Styelsheet</li>
+                </ul>
+            </div>
+
+            <div id="main">
+                <h1>Same Page Different Stylesheets</h1>
+
+                <p style="margin: 0;">This is a demonstration of how different stylesheets can change the layout of your
+                    HTML page. You can
+                    change
+                    the
+                    layout of this page by selecting different stylesheets in the menu, or by selecting one of the
+                    following
+                    links:
+                </p>
+
+                <a class="linkstyle" href="style1.html">Stylesheet1</a>,
+                <a class="linkstyle" href="style2.html">Stylesheet2</a>,
+                <a class="linkstyle" href="">Stylesheet3</a>,
+                <a class="linkstyle" href="">Stylesheet4</a>.
+
+                <h2>No Styles</h2>
+                <p style="margin: 0;">This page uses DIV elements to group different sections of the HTML page. Click
+                    here
+                    to see how the page
+                    looks
+                    like with no stylesheet:</p>
+                <a class="linkstyle" href="nostyle.html">No Stylesheet</a>.
+            </div>
+
+            <div id="sidebar">
+                <h3>Side-Bar</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet
+                    dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>
+        <div id="bottom">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet
+                dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
+                in
+                vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                accumsan et
+                iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                facilisi.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
